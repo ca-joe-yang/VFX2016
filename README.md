@@ -41,6 +41,8 @@
       - Lwhite 為下圖中所使用”Lwhite”，可填可不填
         - default值為整張圖片中原有最高的Lm值
 
+    2. rgb = myTonemap(hdr, 'local')
+
   - Image alignment -> myNTB.m
     - 我們使用的是講義中所介紹的MTB alignment technique
     - 先找到一張圖的中位數median，將threshold設為此，以上為1，以下為0
@@ -50,10 +52,8 @@
     - 將其他影像依據標準圖做移動
 
   - High Dynamic Range -> myHDR.m
-
-  - Debevic’s method -> gsolve.m
-
-  - Mitsunaga and Nayar’s method -> gsolve2.m
+    - Debevic’s method -> gsolve.m
+    - Mitsunaga and Nayar’s method -> gsolve2.m
 
   - Ghost Removal -> myGhost.m & myImageVariance.m
     - 這部分我們有嘗試做做看，但只有做到Image的Weighted Variance這一步而已
