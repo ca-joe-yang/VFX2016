@@ -1,0 +1,6 @@
+*.pages
+*.zip
+input/
+output/
+build/
+images/

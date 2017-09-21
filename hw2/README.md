@@ -1,9 +1,9 @@
 # NTU CSIE DigiVFX 2016
+## HW2 Image Stitching
 - Author
   - B02901072 楊喬諳
   - B02901065 李洺曦
 
-## HW2 Image Stitching
 ### g++ version
 - 4.2.1
 ### Cmake version 
