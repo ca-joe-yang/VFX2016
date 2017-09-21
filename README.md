@@ -9,7 +9,7 @@
 - 我們整個程式都是使用MATLAB所撰寫，使用到的程式庫只包含MATLAB所內建的hdrwrite()函式用以儲存hdr file，以及教授所介紹的Debevec’s gsolve.m
 
 ### File Format
-  — myHDR.m
+  - myHDR.m
     - 使用 hdr = myHDR(ImageDir, format, algorithm, arg);
       - ImageDir 為圖片檔資料夾位置
       - format 為圖片格式，如’.jpg’, ‘.png’, ‘.tif’等
@@ -19,18 +19,18 @@
         - 若為2，則使用Mitsunaga and Nayar’s method
     - hdr 回傳一組 圖片長x圖片寬x3的 hdr radiance matrix
     - 會在程式碼中呼叫到gsolve.m gsolve2.m myMTB.m函式
-  — gsolve.m
+  - gsolve.m
     - Debevec’s method 同講義中所介紹的一樣
-  — gsolve2.m
+  - gsolve2.m
     - 使用 g = gsolve2.m(Z,M);
     - Mitsunaga and Nayar’s method 假設為M次多項式並解之
     - reference: <High Dynamic Range Imaging> p.175開始
-  — myMTB.m
+  - myMTB.m
     - 使用 X = myMTB(X);
     - 輸入一個 圖片數x圖片長x圖片寬x3 的pixel value matrix
     - 回傳一個 已aligned的的pixel value matrix
 
-  — myTonemap.m
+  - myTonemap.m
     - 我們使用的是講義上的Photographic Tone Reproduction
     - 使用方式有兩種
     1. rgb = myTonemap(hdr, ’global’, key, Lwhite);
