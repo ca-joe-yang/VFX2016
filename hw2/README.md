@@ -41,7 +41,8 @@
 ### How to compile:
 
 ```bash
-$ cd ./build
+$ mkdir build
+$ cd build
 $ cmake ..
 $ make
 (which should generate a executable file ./main in the ./build/ directory)
